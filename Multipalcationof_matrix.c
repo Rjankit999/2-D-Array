@@ -3,52 +3,23 @@ of two matrices given by the user.*/
 #include <stdio.h>
 int main()
 {
-    int FR, FC, SR, SC;
-    // First Matirx inpot.......
-    printf("Enter a First Matrix Row Size: ");
-    scanf("%d", &FR);
-    printf("Enter a First Matrix Column Size: ");
-    scanf("%d", &FC);
-    int first[FR][FC];
-    printf("Enter a Value \n");
-    for (int i = 0; i < FR; i++)
+    int arr1[3][3] = {
+        {1, 2, 3},
+        {2, 1, 3},
+        {5, 2, 3}};
+
+    int arr2[3][3] = {
+        {4, 2, 0},
+        {2, 0, 3},
+        {3, 2, 3}};
+        int ans[0][0]=0;
+
+    for (int i = 0; i < 3; i++)
     {
-        for (int j = 0; j < FC; j++)
+        for (int j = 0; j < 3; j++)
         {
-            scanf("%d",&first[i][j]);
+            ans[i][j]=0;
+           
         }
     }
-    // Second Matirx inpot.......
-    printf("Enter a Second Matrix Row Size: ");
-    scanf("%d", &SR);
-    printf("Enter a Second Matrix Column Size: ");
-    scanf("%d", &SC);
-    int second[SR][SC];
-    for (int i = 0; i < SR; i++)
-    {
-        for (int j = 0; j < SC; j++)
-        {
-            scanf("%d", &second[i][j]);
-        }
-    }
-    printf("First Matrix:-\n");
-    for (int i = 0; i < FR; i++)
-    {
-        for (int j = 0; j < FC; j++)
-        {
-            printf("%4d", first[i][j]);
-        }
-        printf("\n");
-    }
-    printf("Second Matrix:-\n");
-    for (int i = 0; i < SR; i++)
-    {
-        for (int j = 0; j < SC; j++)
-        {
-            printf("%4d", second[i][j]);
-        }
-        printf("\n");
-    }
-    // Multiplication fo Matirx.........
-    
 }
